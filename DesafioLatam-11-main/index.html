@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script defer src="./assets/js/script.js"></script>
+        <title>Calculando El Total</title>
+    </head>
+    <body>
+        <section class="contenedor">
+            <div class="calculadora">
+                <img
+                    src="./assets/imgs/pcgamer.png"
+                    alt="Computador de escritorio Gaamer de color rojo junto a sus periféricos: teclado, mouse y pantalla"
+                />
+                <div class="titulo-producto">
+                    <h2>Computador Gamer DXS 3000</h2>
+                </div>
+                <form action="">
+                    <div class="input-caja">
+                        <input
+                            class="input-texto"
+                            id="cantidad"
+                            type="number"
+                            placeholder="Ingrese Cantidad:"
+                            autocomplete="off"
+                            required
+                        />
+                    </div>
+                    <div class="input-caja">
+                        <input
+                            class="input-texto"
+                            id="color"
+                            type="text"
+                            placeholder="Ingrese Color:"
+                            autocomplete="off"
+                            required
+                        />
+                    </div>
+                </form>
+                <p>Precio: <span id="precio"></span></p>
+                <button onclick="total()">Calcular Total</button>
+            </div>
+            <div class="resultado-caja">
+                <p id="total-pc">Total: <span></span></p>
+                <p id="cantidad-pc">Cantidad: <span></span></p>
+                <div class="color-caja">
+                    <p id="color-c">Color:</p>
+                    <div id="color-pc" class="color-pc"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
